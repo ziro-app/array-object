@@ -19,5 +19,8 @@
   "homepage": "https://github.com/ziro-app/array-object#readme",
   "dependencies": {
     "@ziro/decimal-usa": "^1.0.1"
+  },
+  "devDependencies": {
+    "ava": "^3.2.0"
   }
 }
