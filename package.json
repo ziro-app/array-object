@@ -1,0 +1,23 @@
+{
+  "name": "@ziro/array-object",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziro-app/array-object.git"
+  },
+  "author": "Ahmad Forhat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ziro-app/array-object/issues"
+  },
+  "homepage": "https://github.com/ziro-app/array-object#readme",
+  "dependencies": {
+    "@ziro/decimal-usa": "^1.0.1"
+  }
+}
