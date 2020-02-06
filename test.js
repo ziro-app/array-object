@@ -1,18 +1,13 @@
 const test = require('ava')
 const arrayObject = require('./index')
 
-const normalSheets = {values:[["idade"],["24"],["30"]]}
+const normalSheets = {values:[["nome","idade"],["João","24"],["Bruno","30"]]}
 
-test('Recive an normal sheets respose', t => {
-    const value = arrayObject(normalSheets)
-    const transformation = value
-    const objectExpected =    [
-    {
-      idade: 24,
-    },
-    {
-      idade: 30,
-    },
-  ]
-    t.is(transformation, objectExpected)
+test('Receive an normal sheets data', t => {
+    const result = arrayObject(normalSheets)
+    const expected = [{nome: "João", idade: 24}, {nome: "Bruno", idade: 30}]
+    console.log('Receive an normal sheets data')
+    console.log(result)
+    console.log(expected)
+    t.deepEqual(result, expected)
 })
